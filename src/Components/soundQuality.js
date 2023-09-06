@@ -19,15 +19,13 @@ export default function SoundQuality(props) {
 
   return (
     <Box
-      sx={{
-        width: 350,
-        height: 200,
-        display: "flex",
-        gap: 20,
-      }}
+      // sx={{
+      //   minWidth: 350,
+      //   minHeight: 200,
+      // }}
       className="box-component"
     >
-      <Card variant="outlined">
+      <Card className="card" variant="outlined">
         <CardContent>
           <Typography variant="h5" component="div">
             Sound Quality

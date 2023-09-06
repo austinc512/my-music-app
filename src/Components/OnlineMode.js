@@ -18,22 +18,23 @@ export default function OnlineMode(props) {
           Is this application connected to the internet?
         </Typography>
       </CardContent>
-      <br />
-      <br />
       <Switch {...label} onChange={() => props.setIsOnline(!props.isOnline)} />
     </React.Fragment>
   );
 
   return (
     <Box
-      sx={{
-        width: 350,
-        height: 200,
-        display: "flex",
-      }}
+      // sx={{
+      //   minWidth: 350,
+      //   minHeight: 200,
+      //   maxWidth: 400,
+      //   maxHeight: 250,
+      // }}
       className="box-component"
     >
-      <Card variant="outlined">{card}</Card>
+      <Card className="card" variant="outlined">
+        {card}
+      </Card>
     </Box>
   );
 }

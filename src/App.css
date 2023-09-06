@@ -1,28 +1,17 @@
 .main-btn {
   background-color: purple !important;
 }
-/* * {
-  margin: 0;
-  padding: 0;
-} */
 
-/* .box-component {
-  background-color: grey !important;
-  width: 500px;
-  height: 500px;
-} */
-
-.display-area,
-.notification-section {
-  margin: 0 auto;
-  width: 50%;
+.box-component {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
 }
 
 .dashboard {
   display: flex;
-  gap: 25px;
-  margin: 25px;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 h1 {
@@ -30,4 +19,16 @@ h1 {
 }
 h2 {
   font-weight: 650;
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.display-area,
+.notification-section {
+  margin: 0 auto !important;
+  width: 75%;
 }

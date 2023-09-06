@@ -9,14 +9,13 @@ import Slider from "@mui/material/Slider";
 function masterVolume(props) {
   return (
     <Box
-      sx={{
-        width: 350,
-        height: 200,
-        display: "flex",
-      }}
+      // sx={{
+      //   width: 350,
+      //   height: 200,
+      // }}
       className="box-component"
     >
-      <Card variant="outlined">
+      <Card className="card" variant="outlined">
         <CardContent>
           <Typography variant="h5" component="div">
             Master Volume
@@ -25,8 +24,6 @@ function masterVolume(props) {
             Overrides all other sound settings in this application
           </Typography>
         </CardContent>
-        <br />
-        <br />
         <Slider
           aria-label="Temperature"
           defaultValue={30}

@@ -3,9 +3,8 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-// import Button from "@mui/material/Button";
-// import IconButton from "@mui/material/IconButton";
-// import MenuIcon from "@mui/icons-material/Menu"; // this one caused the issue earlier.
+
+import { Link } from "react-router-dom";
 
 export default function ButtonAppBar() {
   return (
@@ -17,6 +16,33 @@ export default function ButtonAppBar() {
           </Typography>
         </Toolbar>
       </AppBar>
+      <Link to="/*">Signin Page</Link>
     </Box>
   );
 }
+
+// this will change the URL in the address bar.
+// which is picked up by the BrowserRouter component
+// which calls the Router so the <Routes> component
+// in the Router will return the correct component
+// to the <BrowserRouter>
+
+// in this case, <Signin>
+// the Link component in its simplest form just takes a "to" prop
+// that indicates the path
+
+/*
+
+Links can send an object of properties through the to prop, which makes them more powerful. for example:
+
+<Link
+  to={{
+      pathname: "/dash",
+      search: "?sort=name",
+      hash: "#the-hash",
+      state: { fromHome: true }
+  }}
+/>
+
+
+*/
